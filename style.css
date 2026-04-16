@@ -27,22 +27,12 @@ header.logo_nav{
     /*remove position:fixed; so content scrolls naturally*/
     position: fixed;
     padding:1.3rem 5%;
-        /*giving it the padding so to bring the content inward and 
-    prevent it from stucking at the edge of the screen, you should
-    use padding(inner margin)not margins(outer margins)!!or else
-     it might cause some errors*/
-    /*I don't understand the previous part...*/
+        
     display:flex;
     top:0;
     left:0;
 
     justify-content: space-between;
-    /*the previous two steps were to spread the 
-    content in the screen...
-    but you might still notice that there happens to be
-    no changes ,and the content still didn't spread across 
-    the whole screen.. this's because we still didn't set 
-    the width of header to cover the entire screen (i.e. 100%)*/
     width:100%;
     box-sizing: border-box;
     /*what does this prpoperty do??*/
@@ -52,7 +42,7 @@ header.logo_nav{
     at the top of the logo*/
     background-color: #BC8F8F;
     z-index: 10000;
-    /*why did we use it*/
+    
 }
 
 img.logo{
@@ -67,8 +57,6 @@ img.contact_icon{
 nav a{
    color: #F4EDDA;
     padding-left: 2rem;
-    /*to leave spaces between the links..
-    why didn't we use margins???*/
     font-weight: 500;
     text-decoration: none;
 }
@@ -330,22 +318,9 @@ address{
         position:absolute;
         top:100%;
         left:0;
-        /*is the flex direction by default rows???*/
         background-color: #7a4854c1;
         width:100%;
         height:0;
-        /*what's the difference between 100% & 100vw & fit content???*/
-        
-        /*display: flex;
-        justify-content: center;
-        (why not align-content:center only???)
-        align-items:center;
-        flex-direction: column;
-
-        this was the steps made in the previous video that 
-        didn't fit you because it appeared to use javascript...
-        
-        */
         overflow: hidden;
         /*so the navigation links move along with the white navigation background*/
         transition: .3s ease;
@@ -359,8 +334,7 @@ address{
         display: block;
         /*so items are no side to side but rather each
         item occupies a new line*/
-        margin: 1.5rem 0;  
-        /*(why is using padding in this case causes differences ) */ 
+        margin: 1.5rem 0;   
         font-size:1.2em;
         text-align: center;
     }
